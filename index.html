@@ -48,6 +48,21 @@ footer{text-align:center;color:var(--muted);font-size:12px;margin-top:26px}
 .pop .t b{display:block;color:var(--gold);font-size:18px}
 .pop a{background:linear-gradient(180deg,#ffe08a,#e8b030);color:#2a0d1e;text-decoration:none;font-weight:800;padding:11px 14px;border-radius:10px;font-size:14px;white-space:nowrap}
 .pop button{background:none;border:0;color:var(--muted);font-size:22px;cursor:pointer;padding:0 4px}
+
+h2{text-align:center;color:var(--gold);font-size:22px;line-height:1.2;margin:34px 0 16px}
+.story{background:var(--card);border:1px solid #6b2a5c;border-radius:14px;padding:14px;margin-bottom:14px;display:flex;gap:12px;align-items:flex-start}
+.story img{width:84px;flex:none;border-radius:8px;border:2px solid var(--gold);background:#4a0f3d}
+.story h3{color:var(--gold);font-size:17px;line-height:1.2;margin-bottom:8px}
+.story p{color:var(--muted);font-size:14px;line-height:1.5;margin-bottom:8px}
+.story p:last-child{margin:0;color:var(--text);font-weight:600}
+.steps{list-style:none;counter-reset:s}
+.steps li{counter-increment:s;background:var(--card);border:1px solid #6b2a5c;border-radius:12px;padding:14px 14px 14px 56px;margin-bottom:10px;position:relative;font-size:14px;color:var(--muted);line-height:1.45}
+.steps li b{display:block;color:var(--text);font-size:15px;margin-bottom:2px}
+.steps li:before{content:counter(s);position:absolute;left:14px;top:13px;width:30px;height:30px;border-radius:50%;background:var(--gold);color:#2a0d1e;font-weight:800;display:flex;align-items:center;justify-content:center}
+.recv{display:grid;gap:10px}
+.recv div{background:var(--card);border:1px solid #6b2a5c;border-radius:12px;padding:14px;font-size:14px;color:var(--muted);line-height:1.45}
+.recv b{display:block;color:var(--gold);font-size:16px;margin-bottom:2px}
+.note{text-align:center;color:var(--muted);font-size:13px;margin:12px 0 20px}
 </style>
 </head>
 <body>
@@ -78,6 +93,39 @@ footer{text-align:center;color:var(--muted);font-size:12px;margin-top:26px}
       <li>Os 3 doramas completos e dublados em português</li>
     </ul>
   </div>
+
+  <h2>As 3 histórias do combo</h2>
+  <div class="story"><img class="s1" alt="">
+    <div><h3>Peão Descartado, o Incomparável Rei Dragão</h3>
+    <p>Owen nasceu na família Hale, mas foi considerado inútil depois de falhar no despertar dos poderes de dragão. Rejeitado pelo próprio pai e enviado para a perigosa Toca dos Dragões, ele sobrevive ao que deveria ter sido seu fim.</p>
+    <p>Sua vida muda quando se torna discípulo do Mestre do Santuário dos Cavaleiros Dragões, desperta poderes extraordinários e conquista as lendárias Dez Marcas do Deus Dragão. Então forma um vínculo de alma com Akira, um poderoso dragão de linhagem dourada.</p>
+    <p>Aquele que todos desprezaram vai mostrar que o verdadeiro poder nunca esteve onde eles imaginavam.</p></div></div>
+  <div class="story"><img class="s2" alt="">
+    <div><h3>Zero a Alfa: o Retorno do Rei Lobo</h3>
+    <p>Um antigo Rei Lobo retorna das sombras para reivindicar seu trono perdido, despertando uma guerra entre o mundo humano e forças sobrenaturais.</p>
+    <p>No meio do caos, uma jovem descobre que sua origem está ligada a um destino ancestral e que seu coração está cada vez mais envolvido pelo misterioso rei das trevas. Entre segredos, magia, poder e um amor proibido, ela terá de fazer uma escolha que pode mudar o destino de dois mundos.</p>
+    <p>Salvar seu reino ou entregar o coração ao homem condenado a viver nas sombras?</p></div></div>
+  <div class="story"><img class="s3" alt="">
+    <div><h3>Rejeitando as Cinco Destinadas</h3>
+    <p>Um príncipe das terras sombrias carrega uma antiga maldição: para salvar seu reino, deve escolher uma entre cinco nobres mulheres destinadas a ele. Mas seu coração, endurecido pela solidão e pelo poder, rejeita cada uma delas.</p>
+    <p>Até que um misterioso lobo surge nas noites de luar e começa a revelar segredos que ligam aquelas almas de maneiras inimagináveis.</p>
+    <p>Entre magia, honra e paixão, o príncipe descobrirá que talvez rejeitar o destino seja o caminho para o verdadeiro amor.</p></div></div>
+
+  <h2>Como comprar</h2>
+  <ol class="steps">
+    <li><b>Clique em "Quero os 3 doramas agora"</b>Você vai para a página de pagamento segura.</li>
+    <li><b>Preencha seus dados</b>Nome, e-mail e WhatsApp. Confira com atenção, porque o acesso chega por eles.</li>
+    <li><b>Escolha pagar com Pix</b>Copie o código ou escaneie o QR Code no app do seu banco.</li>
+    <li><b>Pague e pronto</b>O Pix é confirmado na hora e seus 3 doramas são liberados.</li>
+  </ol>
+
+  <h2>Como você recebe</h2>
+  <div class="recv">
+    <div><b>No seu e-mail</b>Assim que o pagamento é confirmado, o acesso aos 3 doramas chega na sua caixa de entrada.</div>
+    <div><b>No seu WhatsApp</b>Você também recebe o acesso no número que informou na compra.</div>
+  </div>
+  <p class="note">Não encontrou? Olhe o spam ou as promoções do e-mail e confira se o número está certo. Se ainda não chegou, fale com o suporte pelo WhatsApp.</p>
+  <a class="btn" href="https://pay.lowify.com.br/checkout.php?product_id=i3q6v8">Quero os 3 doramas agora</a>
   <footer>© Dorama ONN</footer>
 </div>
 
@@ -94,6 +142,7 @@ var s=600,cd=document.getElementById('cd');
 setInterval(function(){s--;if(s<0)s=600;cd.textContent=String(Math.floor(s/60)).padStart(2,'0')+':'+String(s%60).padStart(2,'0')},1000);
 // mini cartas do popup usam as mesmas imagens das cartas da página
 for(var k=1;k<=3;k++){document.querySelector('.mini .m'+k).src=document.querySelector('.posters .c'+k).src}
+for(var j=1;j<=3;j++){document.querySelector('.s'+j).src=document.querySelector('.posters .c'+j).src}
 // popup do rodapé
 var pop=document.getElementById('pop'),closed=false;
 function show(){if(!closed)pop.classList.add('show')}
